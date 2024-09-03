@@ -1,0 +1,165 @@
+.slider-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .slider-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .slider-media {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+/* Base styles for the navbar */
+.navbar-second, .navbar-third {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    width: 100%;
+    background-color: white;
+  }
+  
+  /* Responsive styles for tablets and smaller devices */
+  @media (max-width: 1024px) {
+    .navbar-second .navbar-brand img {
+      width: 35px; /* Slightly smaller logo for tablets */
+    }
+  
+    .navbar-third .nav-link {
+      font-size: 16px; /* Slightly smaller font size */
+    }
+  
+    .navbar-third .navbar-collapse {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  /* Responsive styles for small laptops and larger tablets */
+  @media (max-width: 768px) {
+    .navbar-second .navbar-brand img {
+      width: 30px; /* Smaller logo size for small laptops/tablets */
+    }
+  
+    .navbar-third .nav-link {
+      font-size: 14px; /* Reduce font size for better readability on smaller screens */
+    }
+  
+    .navbar-third .navbar-collapse {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .navbar-third .nav-link {
+      padding: 0.5rem 0.75rem; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  /* Responsive styles for mobile phones */
+  @media (max-width: 576px) {
+    .navbar-second .navbar-brand img {
+      width: 25px; /* Smaller logo size for mobile phones */
+    }
+  
+    .navbar-third .nav-link {
+      font-size: 12px; /* Further reduction in font size for mobile screens */
+    }
+  
+    .navbar-third .nav-link {
+      padding: 0.4rem 0.5rem; /* Adjust padding for smaller screens */
+    }
+  
+    .navbar-third .navbar-collapse {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+  
+  /* Responsive styles for extra small devices (very small phones) */
+  @media (max-width: 375px) {
+    .navbar-second .navbar-brand img {
+      width: 20px; /* Even smaller logo for very small phones */
+    }
+  
+    .navbar-third .nav-link {
+      font-size: 10px; /* Smallest font size for the smallest screens */
+    }
+  
+    .navbar-third .nav-link {
+      padding: 0.3rem 0.4rem; /* Tight padding for extra small devices */
+    }
+  
+    .navbar-third .navbar-collapse {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+  .equal-height {
+    display: flex;
+    align-items: stretch;
+    width: 105%;
+  }
+  
+  .col-equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .img-full-height {
+    flex: 1;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .stacked-images {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .stacked-images img {
+    width: 40%;
+    object-fit: cover;
+    flex: 1;
+  }
+  
+  .stacked-images .text-container {
+    padding: 0 1rem;
+  }
+  
+  .stacked-images .text-container h4, .stacked-images .text-container h3 {
+    margin: 0;
+  }
+  
+  @media (max-width: 767px) {
+    .equal-height {
+      flex-direction: column;
+    }
+  
+    .stacked-images {
+      flex-direction: column;
+    }
+  
+    .stacked-images img {
+      height: auto; /* Ensure image height adjusts properly on small screens */
+      width:'100%'
+    }
+  }
+  .container1{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 23px;
+  }
+  .box {
+    text-align: center; /* Center text */
+  }
+  .span-box {
+    grid-row: span 2; /* Spans across 2 columns */
+  }  
