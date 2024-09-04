@@ -1,0 +1,38 @@
+/* Header.css */
+.navbar {
+    background-color: white !important; /* Set the background color to white */
+  }
+  
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .icon-nav .nav-link {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Make it responsive for smaller screens */
+  @media (max-width: 991px) {
+    .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    /* .icon-nav {
+      flex-direction: column;
+      
+      justify-content: center;
+      margin-top: 10px;
+    } */
+  }
+  

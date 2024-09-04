@@ -1,0 +1,17 @@
+.custom-card {
+    border: 1px solid transparent; /* Transparent border */ 
+  }
+
+.custom-card-img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.custom-card-img:hover {
+    transform: scale(1.1); 
+  }
+  
+.read-more-link {
+    color: #000000; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+  }
+  

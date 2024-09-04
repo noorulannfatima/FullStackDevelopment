@@ -1,0 +1,36 @@
+/* Hero.css */
+.hero-section {
+    background-color: #d0e7ff;
+    padding: 50px 0;
+  }
+  
+  .animate-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .animated-text,
+  .animated-button {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1s forwards;
+  }
+  
+  .animated-text {
+    animation-delay: 0.3s;
+  }
+  
+  .animated-button {
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
