@@ -1,0 +1,10 @@
+/* Apply styles to the <li> elements in the marquee */
+.marquee ul li {
+   
+    padding-right: 20px; /* Default spacing between items */
+    padding-top: 20px;
+    padding-left: 20px;
+    list-style: none; /* Remove bullet points */
+  }
+  
+ 
