@@ -1,4 +1,4 @@
-export interface Chai {
+export interface Coffee {
     id: number;
     name: string;
     price: number;
