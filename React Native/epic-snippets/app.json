@@ -1,0 +1,94 @@
+{
+  "expo": {
+    "name": "epic-snippets",
+    "slug": "epic-snippets",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.supersimon.epicsnippets"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.supersimon.epicsnippets"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-quick-actions",
+        {
+          "iosActions": [
+            {
+              "title": "Wait! Don't delete me!",
+              "subtitle": "We're here to help",
+              "icon": "symbol:person.crop.circle.badge.questionmark",
+              "id": "0"
+            },
+            {
+              "id": "1",
+              "title": "Show Projects",
+              "icon": "symbol:square.stack.fill",
+              "params": {
+                "href": "/(authenticated)/(tabs)/browse"
+              }
+            },
+            {
+              "id": "2",
+              "title": "Add Task",
+              "icon": "symbol:plus.app",
+              "params": {
+                "href": "/(authenticated)/task/new"
+              }
+            },
+            {
+              "title": "Wait! Don't delete me!",
+              "subtitle": "We're here to help",
+              "icon": "symbol:person.crop.circle.badge.questionmark",
+              "id": "0"
+            },
+            {
+              "id": "1",
+              "title": "Show Projects",
+              "icon": "symbol:square.stack.fill",
+              "params": {
+                "href": "/(authenticated)/(tabs)/browse"
+              }
+            },
+            {
+              "id": "2",
+              "title": "Add Task",
+              "icon": "symbol:plus.app",
+              "params": {
+                "href": "/(authenticated)/task/new"
+              }
+            }
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
